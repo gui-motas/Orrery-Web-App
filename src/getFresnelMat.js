@@ -8,6 +8,7 @@ function getFresnelMat({rimHex = 0x0088ff, facingHex = 0x000000} = {}) {
     fresnelScale: { value: 1.0 },
     fresnelPower: { value: 4.0 },
   };
+  
   const vs = `
   uniform float fresnelBias;
   uniform float fresnelScale;
