@@ -11,7 +11,7 @@ const w = window.innerWidth;
 const h = window.innerHeight;
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-camera.position.z = 10;
+camera.position.z = 25;
 camera.position.y = 10;
 
 const renderer = new THREE.WebGLRenderer({ antialias: false });
@@ -40,7 +40,7 @@ const sunTexture = new THREE.TextureLoader().load("./textures/sun_text.webp");
 const sunMaterial = new THREE.MeshStandardMaterial({
     map: sunTexture,
     emissive: 0xffffff, // Cor da luz emitida
-    emissiveIntensity: 2.5, // Intensidade da luz emitida
+    emissiveIntensity: 4.5, // Intensidade da luz emitida
 });
 const sun = new THREE.Mesh(sunGeometry, sunMaterial);
 scene.add(sun);
